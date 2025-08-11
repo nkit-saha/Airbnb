@@ -1,0 +1,23 @@
+<% if(success && success.length) {  %> <!--eta mne jdi success exist kore ar otr length o >0 then alert ta dekhabo-->
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert"> 
+    <%= success %> 
+<button 
+    type="button" 
+    class="btn-close" 
+    data-bs-dismiss="alert" 
+    aria-label="close">
+</button>
+    </div>
+<% } %>
+
+<% if(error && error.length) {  %> 
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert"> 
+    <%= error %> 
+<button 
+    type="button" 
+    class="btn-close" 
+    data-bs-dismiss="alert" 
+    aria-label="close">
+</button>
+    </div>
+<% } %>
